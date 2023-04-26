@@ -1,0 +1,25 @@
+Sobre o projeto:
+Este é um pequeno projeto de uma aplicação de controle o registro de contratos imobiliários por
+meio de BPT.
+
+Recursos que foram desenvolvidos no App:
+1. Cadastro, edição e exclusão de contrato imobiliário, composto
+por identificação do imóvel (código alfanumérico), UF, valor financeiro e uma
+descrição opcional.
+2. Foram criados o perfil de cliente, responsável por cadastrar contratos e
+submetê-los para aprovação, e o perfil gestor, responsável por aprovar
+contratos e emitir relatórios.
+3. Um cliente deve visualizar apenas os seus contratos, enquanto que o gestor vê todos os
+contratos.
+4. Não é possível cadastrar dois contratos com o mesmo identificador (código).
+5. O gestor visualiza suas informações / emite relatórios:
+   a. valor financeiro total de contratos aprovados e valor financeiro total de todos os contratos;
+   b. somatório do valor financeiro de contratos aprovados por UF;
+   c. contratos que foram aprovados em menos de dois minutos após o seu cadastro.
+SOBRE O BPT:
+6. Após ser cadastrado, o contrato é revisado para então ser aprovado ou
+rejeitado para correções. Se rejeitado, o contrato retorna ao cliente para
+alteração/revisão e nova submissão é feita para aprovação pelo gestor.
+
+Obs: a validação do campo UF (Unidade Federativa) foi feita, propositalmente, utilizando RegEx 
+em vez que se ter uma tabela de UF na base de dados e de fazer uma consulta na base para validaçãp.
